@@ -1,4 +1,4 @@
 import "./style/index.scss";
-import App from "./components/app.tsx";
+import App from "./components/layout";
 
 export default App;
