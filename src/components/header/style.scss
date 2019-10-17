@@ -1,45 +1,51 @@
 .header {
-  position: fixed;
-  left: 0;
-  top: 0;
+  display: flex;
   width: 100%;
-  height: 56px;
-  padding: 0;
-  background: #673ab7;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  z-index: 50;
+}
+
+.image {
+  width: 22%;
+  height: calc(22% * 1.25);
+  margin-right: 2vw;
+  border-radius: 50px;
+  animation: image-fadein 0.8s;
+
+  @media (min-width: 992px) {
+    box-shadow: 0.6vw 0.6vw #000;
+  }
+}
+
+.profile {
+  width: 78%;
+  animation: text-fadein 0.8s;
 
   h1 {
-    float: left;
-    margin: 0;
-    padding: 0 15px;
-    font-size: 24px;
-    line-height: 56px;
-    font-weight: 400;
-    color: #fff;
+    margin-bottom: 5px;
   }
 
-  nav {
-    float: right;
-    font-size: 100%;
+  h2 {
+    font-size: 1.2em;
+    color: lighten(#444, 25%);
+    margin-top: 5px;
+  }
+}
 
-    a {
-      display: inline-block;
-      height: 56px;
-      line-height: 56px;
-      padding: 0 15px;
-      min-width: 50px;
-      text-align: center;
-      background: rgba(255, 255, 255, 0);
-      text-decoration: none;
-      color: #fff;
-      will-change: background-color;
+@keyframes image-fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
-      &:active,
-      &:hover,
-      &.active {
-        background: rgba(0, 0, 0, 0.4);
-      }
-    }
+@keyframes text-fadein {
+  from {
+    transform: translate3d(0, 1vw, 0);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
   }
 }
