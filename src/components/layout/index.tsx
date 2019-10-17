@@ -1,8 +1,8 @@
 import { h, JSX } from "preact";
 import { Route, Router } from "preact-router";
 
-import Home from "../../routes/home";
 import Profile from "../../routes/profile";
+import Home from "../../routes/timeline";
 import Header from "../header";
 
 import * as style from "./style.scss";
