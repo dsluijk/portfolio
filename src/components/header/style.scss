@@ -4,9 +4,48 @@
 }
 
 .image {
-  width: 30vw;
+  width: 22%;
+  height: calc(22% * 1.25);
+  margin-right: 2vw;
+  border-radius: 50px;
+  animation: image-fadein 0.8s;
+
+  @media (min-width: 992px) {
+    box-shadow: 0.6vw 0.6vw #000;
+  }
 }
 
 .profile {
-  width: 70vw;
+  width: 78%;
+  animation: text-fadein 0.8s;
+
+  h1 {
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    color: lighten(#444, 25%);
+    margin-top: 5px;
+  }
+}
+
+@keyframes image-fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes text-fadein {
+  from {
+    transform: translate3d(0, 1vw, 0);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
 }
