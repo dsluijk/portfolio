@@ -1,0 +1,16 @@
+.timeline {
+  position: relative;
+  margin-top: 4vh;
+  padding: 2vh 1vw;
+  width: 100%;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  top: 3vh;
+  width: 4px;
+  bottom: 4vh;
+  background-color: black;
+  border-radius: 10px;
+}
