@@ -25,7 +25,34 @@
   h2 {
     font-size: 1.2em;
     color: lighten(#444, 25%);
-    margin-top: 5px;
+    margin: 5px 0;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style-type: none;
+    padding-bottom: 4px;
+
+    a {
+      color: #444;
+
+      &:hover {
+        color: darken(#444, 30%);
+      }
+    }
+
+    svg {
+      height: 1.2em;
+      vertical-align: middle;
+    }
+
+    span {
+      padding-left: 5px;
+    }
   }
 }
 
