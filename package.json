@@ -50,6 +50,8 @@
     "typings-for-css-modules-loader": "^1.7.0"
   },
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "preact": "^10.0.0",
     "preact-render-to-string": "^5.0.7",
     "preact-router": "^3.0.1"
