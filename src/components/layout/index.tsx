@@ -7,9 +7,6 @@ import Header from "../header";
 
 import * as style from "./style.scss";
 
-// tslint:disable-next-line:no-var-requires
-if (module.hot) { require("preact/debug"); }
-
 export default function App(props: {}): JSX.Element {
   return (
     <div class={style.layout}>
