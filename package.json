@@ -7,7 +7,7 @@
     "start": "per-env",
     "start:production": "npm run -s serve",
     "start:development": "npm run -s dev",
-    "build-style": "tcm src",
+    "build-style": "tsm src",
     "build": "preact build",
     "serve": "preact build && preact serve",
     "dev": "preact watch",
@@ -47,7 +47,7 @@
     "tslint-consistent-codestyle": "^1.14.1",
     "tslint-eslint-rules": "^5.4.0",
     "tslint-react": "^3.6.0",
-    "typed-css-modules": "^0.6.2",
+    "typed-scss-modules": "0.0.12",
     "typescript": "^3.2.1",
     "typings-for-css-modules-loader": "^1.7.0"
   },
