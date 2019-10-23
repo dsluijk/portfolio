@@ -4,4 +4,8 @@
   @media (min-width: 992px) {
     margin: 5vh 25vw 1vh 25vw;
   }
+
+  @media print {
+    margin: 0;
+  }
 }
