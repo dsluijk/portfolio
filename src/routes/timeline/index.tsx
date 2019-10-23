@@ -7,7 +7,7 @@ export default function Home(props: {}): JSX.Element {
   return (
     <main class={style.timeline}>
       <TimeEntry
-        title="Volunteer Reseacher"
+        title="Volunteer Researcher"
         institution="Tribler"
         image="../../assets/logos/tribler.png"
         startDate={new Date("2019-02")}
@@ -19,7 +19,7 @@ export default function Home(props: {}): JSX.Element {
       </TimeEntry>
       <TimeEntry
         title="BSc Computer Science &amp; Engineering"
-        institution="Delft University of Engineering"
+        institution="Delft University of Technology"
         image="../../assets/logos/tudelft.png"
         startDate={new Date("2018-09")}
       >
@@ -46,10 +46,10 @@ export default function Home(props: {}): JSX.Element {
         startDate={new Date("2018-11")}
       >
         This is a software consultancy in a webshop warehouse. Here I
-        successfully build and implemented a app to improve the workflow for
+        successfully build and implemented an app to improve the workflow for
         warehouse management. The most important daily tasks of the warehouse
-        were implemented inside of the app. This improved the speed and decresed
-        the amount of errors dramatically.
+        were implemented inside of the app. This improved the speed and
+        decreased the number of errors dramatically.
       </TimeEntry>
       <TimeEntry
         title="BSc HBO-ICT"
@@ -58,11 +58,11 @@ export default function Home(props: {}): JSX.Element {
         startDate={new Date("2016-09")}
         endDate={new Date("2017-11")}
       >
-        After highschool I started at this University. I scored above average at
-        almost all courses. At the end of the year I was nominated to start
+        After high school I started at this University. I scored above average
+        in almost all courses. At the end of the year I was nominated to start
         Honours track. Despite that I didn't feel like I was being challenged at
-        this University, so in the start of the second year I left to pursue a
-        similar Bachelor at the Delft University of Technology.
+        this University, so at the start of the second year I left to pursue a
+        slightly related Bachelor at the Delft University of Technology.
       </TimeEntry>
     </main>
   );
