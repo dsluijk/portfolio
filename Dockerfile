@@ -16,6 +16,7 @@ COPY tsconfig.json /usr/src/app
 COPY tslint.json /usr/src/app
 
 # Build the application
+RUN npm run build-style
 RUN npm run build
 
 # The actual server, this builds the final image
