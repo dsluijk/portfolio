@@ -1,11 +1,12 @@
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
-  faGithub,
-  faLinkedin,
-  faTelegram,
-  faTwitter
-} from "@fortawesome/free-brands-svg-icons";
-import { faKey } from "@fortawesome/free-solid-svg-icons";
+  faPhoneAlt,
+  faHome,
+  faEnvelope
+} from "@fortawesome/free-solid-svg-icons";
 import { h, JSX } from "preact";
+
+import { secret } from "../../secret";
 
 import Icon from "../icon";
 
@@ -33,22 +34,34 @@ export default function Header(props: {}): JSX.Element {
               <span>danysluijk</span>
             </a>
           </li>
-          <li>
-            <a href="https://t.me/dsluijk/">
-              <Icon icon={faTelegram} />
-              <span>dsluijk</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/dsluijk/">
-              <Icon icon={faTwitter} />
-              <span>dsluijk</span>
-            </a>
-          </li>
-          <li>
-            <Icon icon={faKey} />
-            <span>E54E6E3247A4342A</span>
-          </li>
+          {secret.mail.title && (
+            <li>
+              <a href={secret.mail.link} rel="noreferrer noopener">
+                <Icon icon={faEnvelope} />
+                <span>{secret.mail.title}</span>
+              </a>
+            </li>
+          )}
+          {secret.phone.title && (
+            <li>
+              <a href={secret.phone.link} rel="noreferrer noopener">
+                <Icon icon={faPhoneAlt} />
+                <span>{secret.phone.title}</span>
+              </a>
+            </li>
+          )}
+          {secret.address.title && (
+            <li>
+              <a
+                href={secret.address.link}
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <Icon icon={faHome} />
+                <span>{secret.address.title}</span>
+              </a>
+            </li>
+          )}
         </ul>
       </div>
     </header>
