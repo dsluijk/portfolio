@@ -1,0 +1,36 @@
+[
+  {
+    "title": "BSc Computer Science & Engineering",
+    "institution": "Delft University of Technology",
+    "description": "This is the university I am currently studying at.",
+    "imagePath": "tudelft.png",
+    "tags": [
+      "Algorithms",
+      "Datastructures",
+      "Networking",
+      "Java",
+      "Python",
+      "C++",
+      "SQL"
+    ],
+    "started": "2018-09-01T00:00:00.000Z",
+    "ended": "2021-07-01T00:00:00.000Z"
+  },
+  {
+    "title": "Voortentamen Wiskunde B",
+    "institution": "Centrale Commissies Voortentamen",
+    "description": "I obtained this certificate to show a high proficiency in mathematics.",
+    "imagePath": "ccvx.png",
+    "tags": ["Mathematics", "Calculus", "Trigonometry", "Proofs"],
+    "ended": "2018-07-01T00:00:00.000Z"
+  },
+  {
+    "title": "BSc HBO-ICT",
+    "institution": "University of Applied Sciences Utrecht",
+    "description": "This is the university I started at. I eventually quit, as I did not feel like I was being challenged in a meaningful way.",
+    "imagePath": "hu.png",
+    "tags": ["Project Management"],
+    "started": "2016-09-01T00:00:00.000Z",
+    "ended": "2017-11-01T00:00:00.000Z"
+  }
+]

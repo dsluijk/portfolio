@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Self Hosted Server",
+    "description": "I have been hosting my own server for the last few years. This is because I learn a lot doing it and I think it is fun. Currently I'm migrating all my services into a Kubernetes cluster.",
+    "imagePath": "k8n.png",
+    "tags": ["Kubernetes", "Docker", "Linux"],
+    "started": "2015-01-01T00:00:00.000Z"
+  },
+  {
+    "title": "Mail Server",
+    "description": "I'm building my own mail server from scratch. I'm building this in parts, and I'm currently working on the SMTP server",
+    "imagePath": "mail.png",
+    "tags": ["Rust", "TypeScript", "SMTP", "IMAP"],
+    "started": "2019-09-01T00:00:00.000Z"
+  }
+]
