@@ -1,20 +1,5 @@
 [
   {
-    "title": "Software Engineer",
-    "institution": "Bit",
-    "imagePath": "bit.png",
-    "description": "At Bit I develop prototypes of products in close and direct collaboration with stakeholders. I'm tasked to find out what exactly the client wants, and deliver on that.",
-    "tags": [
-      "Scrum",
-      "Customer Relations",
-      "Soft Skills",
-      "Python",
-      "TypeScript",
-      "Docker"
-    ],
-    "started": "2019-11-01T00:00:00.000Z"
-  },
-  {
     "title": "Fullstack Engineer",
     "institution": "E-fulfillers",
     "imagePath": "efulfillers.png",
