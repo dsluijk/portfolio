@@ -5,7 +5,6 @@
     "imagePath": "efulfillers.png",
     "description": "Here I successfully designed and implemented an app to improve the workflow of a warehouse. This product has significantly improved productivity, and decreased the amount of mistakes made.",
     "tags": ["React Native", "PHP", "SQL"],
-    "started": "2018-11-01T00:00:00.000Z",
-    "ended": "2019-11-01T00:00:00.000Z"
+    "started": "2018-11-01T00:00:00.000Z"
   }
 ]

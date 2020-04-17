@@ -1,5 +1,14 @@
 [
   {
+    "title": "Operating System Development",
+    "institution": "Delft University of Technology",
+    "description": "As an extra assignment I worked on a educational operating system \"CourseOS\". In eight weeks time I made significant progress on a scheduler with context switching. I worked closely in a self-steering team, with whom I gave a presentation for the rest of the class at the end of the quarter.",
+    "imagePath": "tudelft.png",
+    "tags": ["ASM Assembly", "Scheduling", "Teamwork"],
+    "started": "2020-02-10T00:00:00.000Z",
+    "ended": "2020-04-17T00:00:00.000Z"
+  },
+  {
     "title": "Delft Algorithmic Programming Contest",
     "institution": "W.I.S.V. ‘Christiaan Huygens’",
     "description": "In this contest you were given a set of problems, of which you had to think of an algorithm to solve it in the time complexity.",
