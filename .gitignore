@@ -1,6 +1,7 @@
 node_modules
-/build
+/dist
 /*.log
-package-lock.json
+yarn.lock
 *.scss.d.ts
 secret.ts
+.cache

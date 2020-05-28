@@ -1,0 +1,17 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Debug Frontend (Firefox)",
+			"type": "firefox",
+			"request": "launch",
+			"reAttach": true,
+			"url": "http://localhost:1234",
+			"webRoot": "${workspaceFolder}",
+			"breakOnLoad": true,
+			"sourceMapPathOverrides": {
+				"../*": "${webRoot}/*"
+			}
+		}
+	]
+}

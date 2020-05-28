@@ -7,17 +7,19 @@ WORKDIR /usr/src/app
 
 # Copy the package file and install dependencies
 COPY package.json /usr/src/app
-RUN npm install
+RUN yarn install
 
 # Copy over the source code
 COPY src /usr/src/app/src
-COPY preact.config.js /usr/src/app
 COPY tsconfig.json /usr/src/app
-COPY tslint.json /usr/src/app
+COPY .postcssrc /usr/src/app
+COPY .eslintrc.json /usr/src/app
+
+# Run a lint check
+RUN yarn lint
 
 # Build the application
-RUN npm run build-style
-RUN npm run build
+RUN yarn build
 
 # The actual server, this builds the final image
 FROM nginx:latest
@@ -26,6 +28,6 @@ FROM nginx:latest
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Copy the output of the builder
-COPY --from=builder /usr/src/app/build /usr/share/nginx/html
+COPY --from=builder /usr/src/app/dist /usr/share/nginx/html
 RUN chown nginx:nginx /usr/share/nginx/html/ -R
 EXPOSE 80

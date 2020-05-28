@@ -1,82 +1,78 @@
-import { h, JSX } from "preact";
+import { h, JSX, FunctionalComponent, RenderableProps } from "preact";
 
 import * as style from "./style.scss";
 
 import Tags from "../tags";
+import { DataTypes } from "~dataTypes";
 
-export default function Entry(props: Props): JSX.Element {
-  return (
-    <section>
-      <h1>{props.title}</h1>
-      <div>
-        {props.data.map(entry => (
-          <div class={style.wrapper}>
-            <div>
-              <img class={style.image} src={entry.image} alt={entry.title} />
-            </div>
-            <div>
-              <h1>{entry.title}</h1>
-              <h2>{entry.institustion}</h2>
-              <div>
-                <span class={style.date}>
-                  {getDate(entry.started, entry.ended)}
-                </span>{" "}
-                - {entry.description}
-              </div>
-              <Tags>{entry.tags}</Tags>
-            </div>
-          </div>
-        ))}
-        {props.data.length === 0 && "Loading your data.."}
-      </div>
-    </section>
-  );
-}
+const Entry: FunctionalComponent<RenderableProps<Props>> = (props: Props) => {
+	const getDate = (start?: string, end?: string): string => {
+		let out = "";
+		const startDate = start ? new Date(start) : undefined;
+		const endDate = end ? new Date(end) : undefined;
 
-interface Props {
-  title: string;
-  data: DataEntry[];
-}
+		if (start) {
+			out += `${months[startDate.getMonth()]} ${startDate.getFullYear()} to `;
+		} else {
+			out += "Finished in ";
+		}
 
-export interface DataEntry {
-  title: string;
-  institustion: string;
-  description: string;
-  image: string;
-  tags: string[];
-  started?: Date;
-  ended?: Date;
-}
+		if (end) {
+			out += `${months[endDate.getMonth()]} ${endDate.getFullYear()}`;
+		} else {
+			out += "now";
+		}
 
-function getDate(start?: Date, end?: Date): string {
-  let out = "";
+		return out;
+	};
 
-  if (start) {
-    out += `${months[start.getMonth()]} ${start.getFullYear()} to `;
-  } else {
-    out += "Finished in ";
-  }
+	const renderEntry = (entry: DataTypes): JSX.Element => (
+		<div class={style.wrapper}>
+			<div>
+				<img
+					class={style.image}
+					src={`logos/${entry.imagePath}`}
+					alt={entry.title}
+				/>
+			</div>
+			<div>
+				<h1>{entry.title}</h1>
+				<h2>{entry.institution}</h2>
+				<div>
+					<span class={style.date}>{getDate(entry.started, entry.ended)}</span>{" "}
+					- {entry.description}
+				</div>
+				<Tags>{entry.tags}</Tags>
+			</div>
+		</div>
+	);
 
-  if (end) {
-    out += `${months[end.getMonth()]} ${end.getFullYear()}`;
-  } else {
-    out += "now";
-  }
-
-  return out;
-}
+	return (
+		<section>
+			<h1>{props.title}</h1>
+			<div>{props.data.map((entry) => renderEntry(entry))}</div>
+		</section>
+	);
+};
 
 const months = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec"
+	"Jan",
+	"Feb",
+	"Mar",
+	"Apr",
+	"May",
+	"Jun",
+	"Jul",
+	"Aug",
+	"Sep",
+	"Oct",
+	"Nov",
+	"Dec",
 ];
+
+interface Props {
+	title: string;
+	data: DataTypes[];
+}
+
+export default Entry;

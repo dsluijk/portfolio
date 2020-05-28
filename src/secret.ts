@@ -1,14 +1,14 @@
 export const secret = {
-  mail: {
-    link: "",
-    title: ""
-  },
-  phone: {
-    link: "",
-    title: ""
-  },
-  address: {
-    link: "",
-    title: ""
-  }
+	mail: {
+		link: "",
+		title: "",
+	},
+	phone: {
+		link: "",
+		title: "",
+	},
+	address: {
+		link: "",
+		title: "",
+	},
 };

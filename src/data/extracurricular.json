@@ -1,51 +1,51 @@
 [
-  {
-    "title": "Operating System Development",
-    "institution": "Delft University of Technology",
-    "description": "As an extra assignment I worked on a educational operating system \"CourseOS\". In eight weeks time I made significant progress on a scheduler with context switching. I worked closely in a self-steering team, with whom I gave a presentation for the rest of the class at the end of the quarter.",
-    "imagePath": "tudelft.png",
-    "tags": ["ASM Assembly", "Scheduling", "Teamwork"],
-    "started": "2020-02-10T00:00:00.000Z",
-    "ended": "2020-04-17T00:00:00.000Z"
-  },
-  {
-    "title": "Delft Algorithmic Programming Contest",
-    "institution": "W.I.S.V. ‘Christiaan Huygens’",
-    "description": "In this contest you were given a set of problems, of which you had to think of an algorithm to solve it in the time complexity.",
-    "imagePath": "ch.png",
-    "tags": ["Algorithms", "Datastructures", "Python", "Java"],
-    "ended": "2019-09-21T00:00:00.000Z"
-  },
-  {
-    "title": "Assistant Researcher",
-    "institution": "Tribler (Delft Blockchain Lab)",
-    "description": "I am currently trying to improve the reliability connections in an untrusted DHT system. Solving my issue could cause a huge improvement in the usability of truly distributed networks.",
-    "imagePath": "tribler.png",
-    "tags": ["Research", "Distributed Systems", "Rust", "Python"],
-    "ended": "2019-01-01T00:00:00.000Z"
-  },
-  {
-    "title": "HackDelft",
-    "institution": "W.I.S.V. ‘Christiaan Huygens’",
-    "description": "In this hackathon I had created an OAuth 2.0 server following the RFC specs.",
-    "imagePath": "ch.png",
-    "tags": ["Hackaton", "OAuth 2.0"],
-    "ended": "2019-05-01T00:00:00.000Z"
-  },
-  {
-    "title": "First-Year Programming Contest",
-    "institution": "W.I.S.V. ‘Christiaan Huygens’",
-    "description": "This is another algorithmic programming contest I participated in. I ended in place four of the about thirty teams.",
-    "imagePath": "ch.png",
-    "tags": ["Algorithms", "Datastructures", "Python", "Java"],
-    "ended": "2018-09-01T00:00:00.000Z"
-  },
-  {
-    "title": "x86 Assembly Competition Winner",
-    "institution": "Delft University of Technology",
-    "description": "This was a competition to make the fastest Brainfuck interpreter in x86 assembly. I ended up making a JIT compiler, which ran Towers of Hanoi in just under 35ms. Due to the high performance, I won the competition out of 950 students.",
-    "imagePath": "tudelft.png",
-    "tags": ["x86 Assembly", "Brainfuck", "JIT Compiler"],
-    "ended": "2018-09-01T00:00:00.000Z"
-  }
+	{
+		"title": "Operating System Development",
+		"institution": "Delft University of Technology",
+		"description": "As an extra assignment I worked on a educational operating system \"CourseOS\". In eight weeks time I made significant progress on a scheduler with context switching. I worked closely in a self-steering team, with whom I gave a presentation for the rest of the class at the end of the quarter.",
+		"imagePath": "tudelft.png",
+		"tags": ["ASM Assembly", "Scheduling", "Teamwork"],
+		"started": "2020-02-10T00:00:00.000Z",
+		"ended": "2020-04-17T00:00:00.000Z"
+	},
+	{
+		"title": "Delft Algorithmic Programming Contest",
+		"institution": "W.I.S.V. ‘Christiaan Huygens’",
+		"description": "In this contest you were given a set of problems, of which you had to think of an algorithm to solve it in the time complexity.",
+		"imagePath": "ch.png",
+		"tags": ["Algorithms", "Datastructures", "Python", "Java"],
+		"ended": "2019-09-21T00:00:00.000Z"
+	},
+	{
+		"title": "Assistant Researcher",
+		"institution": "Tribler (Delft Blockchain Lab)",
+		"description": "I am currently trying to improve the reliability connections in an untrusted DHT system. Solving my issue could cause a huge improvement in the usability of truly distributed networks.",
+		"imagePath": "tribler.png",
+		"tags": ["Research", "Distributed Systems", "Rust", "Python"],
+		"ended": "2019-01-01T00:00:00.000Z"
+	},
+	{
+		"title": "HackDelft",
+		"institution": "W.I.S.V. ‘Christiaan Huygens’",
+		"description": "In this hackathon I had created an OAuth 2.0 server following the RFC specs.",
+		"imagePath": "ch.png",
+		"tags": ["Hackaton", "OAuth 2.0"],
+		"ended": "2019-05-01T00:00:00.000Z"
+	},
+	{
+		"title": "First-Year Programming Contest",
+		"institution": "W.I.S.V. ‘Christiaan Huygens’",
+		"description": "This is another algorithmic programming contest I participated in. I ended in place four of the about thirty teams.",
+		"imagePath": "ch.png",
+		"tags": ["Algorithms", "Datastructures", "Python", "Java"],
+		"ended": "2018-09-01T00:00:00.000Z"
+	},
+	{
+		"title": "x86 Assembly Competition Winner",
+		"institution": "Delft University of Technology",
+		"description": "This was a competition to make the fastest Brainfuck interpreter in x86 assembly. I ended up making a JIT compiler, which ran Towers of Hanoi in just under 35ms. Due to the high performance, I won the competition out of 950 students.",
+		"imagePath": "tudelft.png",
+		"tags": ["x86 Assembly", "Brainfuck", "JIT Compiler"],
+		"ended": "2018-09-01T00:00:00.000Z"
+	}
 ]

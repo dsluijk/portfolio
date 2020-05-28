@@ -1,63 +1,54 @@
 {
-  "private": true,
-  "name": "portfolio",
-  "version": "0.1.0",
-  "license": "MIT",
-  "scripts": {
-    "start": "per-env",
-    "start:production": "npm run -s serve",
-    "start:development": "npm run -s dev",
-    "build-style": "tsm src",
-    "build": "preact build",
-    "serve": "preact build && preact serve",
-    "dev": "preact watch",
-    "lint": "tslint --project src"
-  },
-  "lint-staged": {
-    "*.{js,jsx,css,md,scss}": [
-      "prettier --write",
-      "git add"
-    ],
-    "*.{ts,tsx}": [
-      "tslint --fix",
-      "git add"
-    ]
-  },
-  "eslintConfig": {
-    "extends": "eslint-config-aerian"
-  },
-  "eslintIgnore": [
-    "build/*"
-  ],
-  "devDependencies": {
-    "@types/webpack-env": "^1.13.9",
-    "css-loader": "^1.0.1",
-    "husky": "^1.2.0",
-    "lint-staged": "^8.1.0",
-    "node-sass": "^4.12.0",
-    "per-env": "^1.0.2",
-    "preact-cli": "^3.0.0-next.19",
-    "preact-render-spy": "^1.3.0",
-    "prettier": "^1.15.3",
-    "sass-loader": "^7.3.1",
-    "ts-loader": "^3.5.0",
-    "tslint": "^5.11.0",
-    "tslint-config-prettier": "^1.17.0",
-    "tslint-consistent-codestyle": "^1.14.1",
-    "tslint-eslint-rules": "^5.4.0",
-    "tslint-react": "^3.6.0",
-    "typed-scss-modules": "0.0.12",
-    "typescript": "^3.2.1",
-    "typings-for-css-modules-loader": "^1.7.0"
-  },
-  "dependencies": {
-    "@fortawesome/free-brands-svg-icons": "^5.11.2",
-    "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "preact": "^10.0.0",
-    "preact-render-to-string": "^5.0.7"
-  },
-  "peerDependencies": {
-    "prettier": ">1.0.0",
-    "tslint": ">5.0.0"
-  }
+	"name": "portfolio",
+	"version": "0.1.0",
+	"license": "MIT",
+	"private": true,
+	"author": "Dany Sluijk",
+	"sideEffects": [
+		"./src/index.tsx"
+	],
+	"browserslist": "> 0.25%, not dead",
+	"pwaManifest": {
+		"name": "Dany Sluijk - Portfolio",
+		"shortName": "Dany Sluijk",
+		"startURL": "/",
+		"generateIconOptions": {
+			"baseIcon": "./static/face.png",
+			"genFavicons": true
+		}
+	},
+	"scripts": {
+		"start": "yarn watch",
+		"watch": "parcel ./src/index.html",
+		"build": "parcel build ./src/index.html --experimental-scope-hoisting",
+		"lint": "eslint --max-warnings 0 --ext .js,.jsx,.ts,.tsx ./src && stylelint './src/**/*.scss'"
+	},
+	"devDependencies": {
+		"@rfgamaral/parcel-plugin-typings-for-css-modules": "^1.0.4",
+		"@types/node": "^14.0.5",
+		"@types/parcel-env": "0.0.0",
+		"@typescript-eslint/eslint-plugin": "^2.27.0",
+		"@typescript-eslint/parser": "^2.26.0",
+		"autoprefixer": "^9.8.0",
+		"eslint": "^7.0.0",
+		"eslint-config-preact": "^1.1.1",
+		"eslint-config-prettier": "^6.10.1",
+		"parcel": "1.12.4",
+		"parcel-bundler": "^1.12.4",
+		"parcel-plugin-compress": "^2.0.2",
+		"parcel-plugin-imagemin": "^4.0.1",
+		"parcel-plugin-prerender": "^1.4.1",
+		"parcel-plugin-pwa-manifest": "^3.0.7",
+		"parcel-plugin-static-files-copy": "^2.3.1",
+		"postcss-modules": "^2.0.0",
+		"sass": "^1.26.5",
+		"stylelint": "^13.3.2",
+		"stylelint-config-sass-guidelines": "^7.0.0",
+		"typescript": "^3.9.3"
+	},
+	"dependencies": {
+		"@fortawesome/free-brands-svg-icons": "^5.13.0",
+		"@fortawesome/free-solid-svg-icons": "^5.13.0",
+		"preact": "^10.4.4"
+	}
 }

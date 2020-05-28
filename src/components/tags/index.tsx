@@ -1,17 +1,17 @@
-import { h, JSX } from "preact";
+import { h, FunctionalComponent, RenderableProps } from "preact";
 
 import * as style from "./style.scss";
 
-export default function Tags(props: Props): JSX.Element {
-  return (
-    <ul class={style.wrapper}>
-      {props.children.map(tag => (
-        <li class={style.tag}>{tag}</li>
-      ))}
-    </ul>
-  );
-}
+const Tags: FunctionalComponent<RenderableProps<Props>> = (props) => (
+	<ul class={style.wrapper}>
+		{props.children.map((tag) => (
+			<li class={style.tag}>{tag}</li>
+		))}
+	</ul>
+);
 
 interface Props {
-  children: string[];
+	children: string[];
 }
+
+export default Tags;

@@ -1,94 +1,92 @@
 .header {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding-top: 2vh;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-top: 2vh;
 
-  @media (min-width: 992px), print {
-    padding-top: 0;
-    flex-direction: row;
-  }
+	@media (min-width: 992px), print {
+		padding-top: 0;
+		flex-direction: row;
+	}
 }
 
 .image {
-  height: 30vh;
-  margin-bottom: 2vh;
-  // See https://github.com/preactjs/preact-cli/issues/897
-  // animation: image-fadein 0.8s;
+	height: 30vh;
+	margin-bottom: 2vh;
+	animation: image-fadein 1.5s;
 
-  @media (min-width: 992px), print {
-    margin-bottom: 0;
-    height: 20vh;
-    margin-right: 2.5vw;
-  }
+	@media (min-width: 992px), print {
+		margin-bottom: 0;
+		height: 20vh;
+		margin-right: 2.5vw;
+	}
 
-  img {
-    display: block;
-    height: 100%;
-    margin: 0 auto;
-    border-radius: 25px;
-  }
+	img {
+		display: block;
+		height: 100%;
+		margin: 0 auto;
+		border-radius: 25px;
+	}
 }
 
 .profile {
-  // See https://github.com/preactjs/preact-cli/issues/897
-  // animation: text-fadein 0.8s;
+	animation: text-fadein 0.8s;
 
-  h1 {
-    margin-top: 0;
-    margin-bottom: 5px;
-  }
+	h1 {
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
 
-  h2 {
-    font-size: 1.2em;
-    color: lighten(#444, 25%);
-    margin: 5px 0;
-  }
+	h2 {
+		font-size: 1.2em;
+		color: lighten(#444, 25%);
+		margin: 5px 0;
+	}
 
-  ul {
-    padding: 0;
-    margin: 0;
-  }
+	ul {
+		padding: 0;
+		margin: 0;
+	}
 
-  li {
-    list-style-type: none;
-    padding-bottom: 4px;
+	li {
+		list-style-type: none;
+		padding-bottom: 4px;
 
-    a {
-      color: #444;
+		a {
+			color: #444;
 
-      &:hover {
-        color: darken(#444, 30%);
-      }
-    }
+			&:hover {
+				color: darken(#444, 30%);
+			}
+		}
 
-    svg {
-      height: 1.2em;
-      vertical-align: middle;
-    }
+		svg {
+			height: 1.2em;
+			vertical-align: middle;
+		}
 
-    span {
-      padding-left: 5px;
-    }
-  }
+		span {
+			padding-left: 5px;
+		}
+	}
 }
 
 @keyframes image-fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 @keyframes text-fadein {
-  from {
-    transform: translate3d(0, 1vw, 0);
-    opacity: 0;
-  }
-  to {
-    transform: none;
-    opacity: 1;
-  }
+	from {
+		transform: translate3d(0, 1vw, 0);
+		opacity: 0;
+	}
+	to {
+		transform: none;
+		opacity: 1;
+	}
 }
