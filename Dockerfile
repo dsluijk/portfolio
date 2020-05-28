@@ -14,6 +14,7 @@ COPY src /usr/src/app/src
 COPY tsconfig.json /usr/src/app
 COPY .postcssrc /usr/src/app
 COPY .eslintrc.json /usr/src/app
+COPY .stylelintrc.json /usr/src/app
 
 # Run a lint check
 RUN yarn lint
