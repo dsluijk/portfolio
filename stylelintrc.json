@@ -1,8 +1,0 @@
-{
-  "extends": "stylelint-config-sass-guidelines",
-  "rules": {
-    "indentation": "tab",
-    "order/properties-alphabetical-order": null,
-    "string-quotes": "double"
-  }
-}
